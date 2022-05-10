@@ -4,7 +4,7 @@ let first = document.getElementById('first')
 let flashBar = $('.flashing-bar');
 
 function type() {
-    if(i < Ftxt.length) {
+    if (i < Ftxt.length) {
         first.innerHTML += Ftxt.charAt(i);
         i++;
         setTimeout(() => {
@@ -20,7 +20,7 @@ let Stxt = "just buy a house";
 let second = document.getElementById('second')
 
 function type2() {
-    if(x < Stxt.length) {
+    if (x < Stxt.length) {
         second.innerHTML += Stxt.charAt(x);
         x++;
         setTimeout(type2, 100)
