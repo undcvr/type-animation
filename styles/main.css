@@ -1,0 +1,30 @@
+@import url(fonts.css);
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Custom;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 0 5px 20px rgb(255, 255, 255);
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.flashing-bar {
+    display: none;
+    background: white;
+    width: 10px;
+    height: 40px;
+    animation: 0.5s fade infinite step-end;
+    box-shadow: 0 0 20px 7px rgba(255, 255, 255, 0.307);
+}
+.factive {
+    display: block;
+}
+@keyframes fade {
+    50% { background: transparent;  box-shadow: none; }
+}
